@@ -1,6 +1,15 @@
 import React from "react";
+import { useState, useRef, useEffect } from "react";
 
-const HomePage = () => {
+const HomePage = (props) => {
+  const { setFile, setRecording } = props;
+
+  // a state for the state of our recording ( inactive or recording)
+  const [recStat, setRecStat] = useState("inactive");
+  // a state for the audio itseld
+  const [audio, setAudio] = useState(null);
+  // a state for
+
   return (
     <main className="flex-1 flex flex-col p-4 justify-center items-center pb-20">
       <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold p-4">
@@ -20,7 +29,12 @@ const HomePage = () => {
         Or{" "}
         <label className="text-purple-500 hover:text-purple-400 duration-200">
           Upload{" "}
-          <input className="hidden" type="file" accept=".mp3,.wave"></input>
+          <input
+            className="hidden"
+            type="file"
+            accept=".mp3,.wave"
+            onChange={(e) => setFile(e.target.files[0])}
+          ></input>
         </label>
         a mp3 file
       </p>
