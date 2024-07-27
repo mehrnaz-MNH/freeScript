@@ -7,7 +7,9 @@ const Top = () => {
         Whisper
         <span className="font-bold text-pretty text-purple-500">Scribe</span>
       </h1>
-      <button className="text-lg">New +</button>
+      <button className="rounded-lg customBtn px-4 items-center gap-2 py-2 text-purple-400 duration-200">
+        New +
+      </button>
     </header>
   );
 };

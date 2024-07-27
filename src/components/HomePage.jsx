@@ -11,7 +11,7 @@ const HomePage = () => {
         Record <span className="text-purple-400">&rarr;</span> Transcribe{" "}
         <span className="text-purple-400">&rarr;</span> Translate
       </h3>
-      <button className="flex items-center justify-between text-base gap-4 mx-auto w-72 max-w-full my-4">
+      <button className="flex items-center justify-between text-base gap-4 mx-auto w-72 max-w-full my-4 customBtn duration-200 px-4 py-2 rounded-xl">
         <p>Record</p>
         <i className="fa-solid fa-microphone"></i>
       </button>
